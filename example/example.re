@@ -6,7 +6,6 @@ module Example = {
     player: Youtube.state,
     timerId: ref(option(Js.Global.intervalId)),
   };
-
   type action =
     | LoadVideoById
     | CueVideoById
@@ -48,15 +47,12 @@ module Example = {
     | Destroy
     | GetAvailableQualityLevels
     | GetPlaylist;
-
   let component = ReasonReact.reducerComponent("App");
-
   let clearTimer = state =>
     switch (state.timerId^) {
     | Some(id) => Js.Global.clearInterval(id)
     | None => ()
     };
-
   let make = _children => {
     ...component,
     initialState: () => {timerId: ref(None), player: Youtube.youtubeState},
@@ -149,7 +145,6 @@ module Example = {
     didMount: self => {
       /*Check to see if the player has loaded from the Youtube API, and if so create the player*/
       let checker = () => {
-        Js.log("check");
         let isLoaded = Youtube.isLoaded();
         isLoaded ?
           {
