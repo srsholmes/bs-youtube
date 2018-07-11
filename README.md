@@ -31,8 +31,8 @@ Youtube.playVideo(player)
 npm run start
 ```
 
-## Documentation?
-See `example/example.re` for sample usage and the [Youtube API Docs](https://developers.google.com/youtube/iframe_api_reference) for the methods you can access on the player.
+## Documentation
+See `example/example.re` for sample usage and the [Youtube API Docs](https://developers.google.com/youtube/iframe_api_reference) for documentation of what the methods do.
 
 ## TODO:
 - Documentation
