@@ -1,0 +1,46 @@
+{
+  "name": "bs-youtube",
+  "version": "0.0.1",
+  "description": "BuckleScript bindings for the youtube iframe API",
+  "main": "src/youtube.re",
+  "scripts": {
+    "build": "bsb -make-world",
+    "webpack": "webpack -w",
+    "start": "bsb -make-world -w",
+    "patch": "npm version patch && npm publish",
+    "minor": "npm version minor && npm publish",
+    "major": "npm version major && npm publish",
+    "prepublishOnly": "npm run build",
+    "postpublish": "git push origin develop --follow-tags"
+  },
+  "keywords": [
+    "youtube",
+    "bucklescript",
+    "reason",
+    "iframe",
+    "video"
+  ],
+  "author": "Simon Holmes",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srsholmes/bs-youtube.git"
+  },
+  "dependencies": {
+    "bs-webapi": "^0.10.0"
+  },
+  "devDependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "reason-scripts": "0.9.0",
+    "bs-jest": "^0.1.0",
+    "bs-platform": "^3.1.5",
+    "reason-react": "^0.4.2",
+    "webpack": "^3.8.1"
+  },
+  "jest": {
+    "roots": [
+      "lib/js/src"
+    ]
+  }
+}
