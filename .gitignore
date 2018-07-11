@@ -6,3 +6,4 @@ npm-debug.log
 .bsb.lock
 *.log
 .idea
+example/bundle.js

@@ -25,6 +25,16 @@ let player = Youtube.getPlayer();
 Youtube.playVideo(player)
 ```
 
+## Example
+
+```sh
+npm run build && npm run webpack
+cd example
+python -m SimpleHTTPServer 8080
+Go to [Localhost](http://localhost:8080)
+(Or whatever http server you want to use)
+```
+
 ## Development
 
 ```sh
