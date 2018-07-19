@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "BuckleScript bindings for the youtube iframe API",
   "main": "src/youtube.re",
+  "homepage": "https://github.com/srsholmes/bs-youtube#readme",
   "scripts": {
     "build": "bsb -make-world",
     "webpack": "webpack -w",
